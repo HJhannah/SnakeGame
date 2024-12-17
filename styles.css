@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(187, 166, 199);
+}
+
+.wrapper {
+    width: 65vmin;
+    height: 70vmin;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 5px;
+    background: rgb(81, 71, 133);
+    border-style: dashed;
+    border-color: blueviolet;
+    border-width: 5px;
+}
+
+.gameDetails {
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.board {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+    background-image: url('dirtBackground.jpg');
+}
+
+h1 {
+    text-align: center;
+    color: rgb(227, 216, 255);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(149, 11, 191);
+}
+
+.gameDetails, #endGame {
+    text-align: center;
+    padding: 10px;
+}
+
+#formSelection {
+    text-align: center;
+    padding: 50px;
+}
+
+#submitBtn {
+    background-color: rgb(198, 151, 255);
+    border-radius: 30%;
+    padding: 10px;
+}
+
+#nextPlayerBtn {
+    background-color: rgb(198, 151, 255);
+    padding: 10px;
+    border-radius: 30%;
+    margin-left: 140px;
+    margin-top: 100px;
+    font-size: larger;
+    position: absolute;
+}
+
+.wrapper, #scoreInfo {
+    color: white;
+    text-align: center;
+    justify-content: center;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+}
